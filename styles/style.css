@@ -619,9 +619,9 @@ a#home {
     border-radius: 1rem;
     text-align: center;
     position: relative;
-    bottom: 110px;
-    left: 130px;
-    transform: rotate(-40deg);
+    bottom: 105px;
+    left: 125px;
+    transform: rotate(-30deg);
     
   }
   .footer p{
