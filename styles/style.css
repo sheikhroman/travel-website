@@ -1,112 +1,627 @@
 /* global css */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Mulish', sans-serif;
-    --primary-color: #FF5400;
-    --secondary-color: #FFF;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  --primary-color: #ff5400;
+  --secondary-color: #fff;
 }
 /* shared css */
-.button{
-    background-color: var(--primary-color);
-    width: 174px;
-    height: 52px;
-    flex-shrink: 0;
-    border-radius: 1rem;
-    border: none;
-    color: var(--secondary-color);
-    font-weight: 700;
+.button {
+  background-color: var(--primary-color);
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  border: none;
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 /* header css */
-header{
-    padding: 3.2rem;
+header {
+  padding: 3.2rem;
 }
-nav{
-    /* margin: 30px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  /* margin: 30px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.logo h3{
-    font-size: 2rem;
-    font-weight: 800;
+.logo h3 {
+  font-size: 2rem;
+  font-weight: 800;
 }
-.logo span{
-    color: var(--primary-color);
+.logo span {
+  color: var(--primary-color);
 }
-nav >ul{
-    display: flex;
+nav > ul {
+  display: flex;
 }
-nav li{
-    list-style: none;
-    margin-right: 1.2rem;
-    font-weight: 500;
-    font-size: 1rem;
+nav li {
+  list-style: none;
+  margin-right: 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
-nav li a{
-    text-decoration: none;
-    color: #424247;
-    font-size: 1rem;
-    font-weight: 600;
+nav li a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 1rem;
+  font-weight: 600;
 }
-a#home{
-    color: var(--primary-color);
+a#home {
+  color: var(--primary-color);
 }
 
 /* banner */
-.banner{
-    padding: 10rem;
-    /* margin: 50px; */
-    background-size: auto;
-    border-radius: 1rem;
-    color: var(--secondary-color);
-    margin: 2rem  7rem;
-    background-image: linear-gradient(180deg, #322e3a 0%, rgba(7, 2, 17, 0) 80%),url(../Images/banner.png);
-    background-repeat: no-repeat;
-    /* linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%), */
+.banner {
+  padding: 10rem;
+  /* margin: 50px; */
+  background-size: auto;
+  border-radius: 1rem;
+  color: var(--secondary-color);
+  margin: 2rem 7rem;
+  background-image: linear-gradient(180deg, #322e3a 0%, rgba(7, 2, 17, 0) 80%),
+    url(../Images/banner.png);
+  background-repeat: no-repeat;
+  /* linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%), */
 }
-.banner .banner-text{
+.banner .banner-text {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.banner-title {
+  margin-top: -40px;
+  font-size: 3.9rem;
+  font-weight: 700;
+}
+.banner-desc {
+  margin-bottom: 20px;
+}
+.banner-menu {
+  background: rgba(255, 255, 255, 0.3);
+  width: 70%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-left: 6rem;
+  padding: 1.5rem;
+}
+.banner-menu input {
+  width: 40%;
+  border: 0;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+}
+/* main css */
+
+/* tours css */
+.tours {
+  margin: 40px 100px;
+  display: flex;
+  margin-top: -30px;
+  gap: 2rem;
+}
+.tours h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #131318;
+}
+.tours p {
+  color: rgba(19, 19, 24, 0.7);
+  margin-top: 1rem;
+}
+.tours ul {
+  margin-left: 3rem;
+}
+.tours ul li {
+  margin: 2rem 0;
+  color: #131318;
+}
+.tours button {
+  margin-top: 2rem;
+}
+
+/* Destination css */
+.destination {
+  margin: 20px 90px;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.destination-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.destination-content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.destination-images img {
+  padding: 0.6rem;
+}
+.img-container{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+.img-text{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+}
+.destination-images-1{
+    display: flex;
+    align-items: centers;
+    margin: 2rem;
+    gap: 2rem;
+}
+.destination-images-2{
+    display: flex;
+    align-items: centers;
+    margin: 2rem;
+    gap: 2rem;
+}
+.destination-images-3{
+    display: flex;
+    align-items: centers;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+/* choose us */
+.choose-us {
+  width: 100%;
+}
+.choose-us h2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.choose-us p {
+  font-size: 1rem;
+}
+.choose-cart {
+  display: flex;
+}
+.cart-1 {
+  background: rgba(251, 181, 99, 0.05);
+  text-align: start;
+  padding: 1.7rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.cart-1 h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.cart-1 p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.cart-2 {
+  background: rgba(41, 206, 246, 0.05);
+  text-align: start;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 1.7rem;
+}
+.choose-3 {
+  display: flex;
+}
+.choose-3 .cart-3 {
+  width: 50%;
+  background: rgba(251, 181, 99, 0.05);
+  text-align: start;
+  padding: 1.7rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.choose-3 .gap {
+  width: 25%;
+}
+/* deals */
+.deals {
+  margin-top: 1rem;
+}
+.deals-content h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.deals-content p {
+  font-size: 1rem;
+  color: #424247;
+}
+
+.deals-cart-1 {
+  background-image: url(../Images/Group\ 39.png);
+  background-repeat: no-repeat;
+  margin: 2rem 7rem;
+  background-size: auto;
+  border-radius: 2rem;
+  display: flex;
+}
+.deals-cart-2 {
+  background-image: url(../Images/Group\ 40.png);
+  background-repeat: no-repeat;
+  margin: 2rem 7rem;
+  background-size: auto;
+  border-radius: 2rem;
+  display: flex;
+}
+.deals-cart-1 {
+  background-image: url(../Images/Group\ 39.png);
+  background-repeat: no-repeat;
+  margin: 2rem 7rem;
+  background-size: auto;
+  border-radius: 2rem;
+  display: flex;
+}
+.space {
+  width: 50%;
+}
+.deals-text {
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    margin: 5rem 2.5rem;
+    padding: 5rem;
+    text-align: start;
+  }
+  .deals-text .upper{
+    display: flex;
+  }
+  .upper p{
+    padding-left: 1rem;
+  }
+.deals-text .deals-title{
+    margin: .4rem 0;
+    font-size: 2rem;
+}
+.deals-text .deals-desc{
+    margin: .4rem 0;
+    color: #5A5A5D;
+}
+.deals-text .price{
+    margin: 1rem 0;
+    color: var(--primary-color);
+    font-weight: 700;
+
+}
+/* place css */
+.place {
+    margin: 40px 100px;
+    display: flex;
+    margin-top: -30px;
+    text-align: start;
+    gap: 2rem;
+  }
+  .place h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131318;
+  }
+  .place p {
+    color: rgba(19, 19, 24, 0.7);
+    margin-top: 1rem;
+  }
+  .place ul {
+    margin-left: 1rem;
+  }
+  .place ul li {
+    margin: 2rem 0;
+    font-weight: 600;
+    color: #131318;
+  }
+  .place button {
+    margin-top: 2rem;
+  }
+  /* news */
+  .news{
+    display: flex;
     padding: 1rem;
+  }
+  .news .form{
+    padding: 2rem;
+    width: 50%;
+    border: 1px solid #ff5400;
+    border-radius: 1rem;
+    display: inline;
+    margin:  0 2rem;
+  }
+  .form h2{
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .form p{
+    margin: 1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .form hr{
+    width: 75%;
+    align-items: center;
+    margin-left: 3.9rem;
+  }
+  .form input{
+    padding: 1.6rem 7rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(19, 19, 24, 0.05);
+  }
+  .save{
+    max-width: 200px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 140px;
+    left: 450px;
+    transform: rotate(-40deg);
+    
+  }
+.news .image{
+    margin-top: 3rem;
+    width: 50%;
+}
+/* footer css */
+.footer{
     align-items: center;
     text-align: center;
+    background: rgba(19, 19, 24, 0.05);
 }
-.banner .banner-text h1{
-    font-size: 4rem;
+
+.footer-logo {
+    display:inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .footer-logo h3 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .footer-logo span {
+    color: var(--primary-color);
+  }
+  .footer p{
+    margin-top: 1rem;
+  }
+.footer .social{
+    margin-top: 1rem;
 }
-.banner .banner-text p{
+.footer hr{
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    margin-left: 19rem;
+    margin-top: 1rem;
+}
+.copy{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* responsive css */
+/* mobile */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .banner {
+    /* background-image: url; */
+    padding: 4rem;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    background-size: cover;
+  }
+  .banner-text {
+    /* margin-left: 2px auto; */
+    /* max-width: 10%; */
+    padding: 30px 5px;
+  }
+  .banner-title {
+    width: auto;
+    font-size: 1.6rem;
+  }
+  .banner-desc {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .banner-menu {
+    max-width: 100%;
+    display: flex;
+    /* padding: 2rem; */
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    flex-direction: column;
+  }
+  .banner-menu input {
+    padding: 1rem 2rem;
+  }
+  .destination {
+    margin: 2rem;
+  }
+  .tours {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
+  .tours ul {
+    margin-left: 1rem;
+  }
+  .tours img {
+    width: 100%;
+  }
+  .destination-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .destination img {
+    width: 100%;
+  }
+  .destination-images-1{
+    flex-direction: column;
+    align-items: centers;
+    margin: 2rem;
+    gap: 2rem;
+}
+.destination-images-2{
+    flex-direction: column;
+    align-items: centers;
+    margin: 2rem;
+    gap: 2rem;
+}
+.destination-images-3{
+    flex-direction: column;
+    align-items: centers;
+    margin: 2rem;
+    gap: 2rem;
+}
+  .choose-us h2 {
+    font-size: 2rem;
+  }
+  .choose-cart {
+    flex-direction: column;
+  }
+  .cart-1 img{
+    width: 3rem;
+  }
+  .cart-2 img{
+    width: 3rem;
+  }
+  .cart-3 img{
+    width: 3rem;
+  }
+  .choose-3 .cart-3 {
+    width: 100%;
+    background: rgba(251, 181, 99, 0.05);
+    text-align: start;
+    padding: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+  .deals{
+    display: inline-table;
+  }
+  .deals-text {
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    margin: 1rem ;
+    padding: 2rem;
+    text-align: start;
+  }
+  .deals-text .upper{
+    display: flex;
+  }
+  .upper p{
+    padding-left: 1rem;
+    font-size: .5rem;
+  }.upper img{
+    width: 40%;
+  }
+.deals-text .deals-title{
+    margin: .4rem 0;
     font-size: 1rem;
 }
-.banner-menu{
-    background: rgba(255, 255, 255, 0.30);
-    width: 70%;
-    padding: 2rem;
-    border-radius: 1rem;
-    display: flex;
-    gap: 1rem;
-    margin-left: 6rem;
+.deals-text .deals-desc{
+    margin: .4rem 0;
+    color: #5A5A5D;
 }
-.banner-menu input{
-    width: 40%;
+.deals-text .price{
+    margin: .5rem 0;
+    color: var(--primary-color);
+    font-weight: 700;
+
+}
+
+  .place h2{
+    font-size: 2rem;
+  }
+  .place {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
+  .place ul {
+    margin-left: 1rem;
+  }
+  .place img {
+    width: 100%;
+  }
+
+  .news{
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .news .form{
+    width: 100%;
+    border: 1px solid #ff5400;
+    border-radius: 1rem;
+    margin-left: -2rem;
+    
+  }
+  .form hr{
+    width: 65%;
+  }
+  .form input{
+    padding: 1.5rem 3rem;
+    margin: 1rem 0;
+    border-radius: 8px;
     border: 0;
-    padding-left: 1rem;
+    background: rgba(19, 19, 24, 0.05);
+  }
+  .news .image{
+    margin-top: 2rem;
+    width: 100%;
+}
+.save{
+    max-width: 120px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-weight: 600;
     border-radius: 1rem;
-    background-color: var(--secondary-color);
-}
-.banner-menu button{
-
-}
-
-/* responsive scc */
-/* mobile */
-@media screen and (max-width:576px){
-    nav{
-        flex-direction: column;
-        gap: 1.3rem;
-    }
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    left: 175px;
+    transform: rotate(-40deg);
+    
+  }
+  .footer hr{
+    width: 79%;
+    margin-left:3rem;
+  }
 }
