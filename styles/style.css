@@ -531,7 +531,7 @@ a#home {
     border-radius: 1rem;
   }
   .deals{
-    display: none;
+    /* display: none; */
     display: inline-table;
   }
   .deals-content h2 {
@@ -542,7 +542,7 @@ a#home {
     font-size: 0.9rem;
   }
   .deals-text {
-    padding: 0.5rem;
+    padding: .7rem;
     text-align: center;
     position: inherit;
   }
