@@ -417,9 +417,41 @@ a#home {
 .copy{
     padding: 1rem;
 }
-
-
-
+/* review css */
+.review-container{
+  width: 100%;
+  margin: 3rem 0;
+  padding: 1rem 0;
+}
+.review-container h2{
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+.review{
+  display: flex;
+  width: 100%;
+}
+.review img{
+  width: 30%;
+}
+.review-content{
+  border: 2px solid #ff5400;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.review-content .star img{
+  width: 5%;
+}
+.review-content h4{
+  padding: .5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.review-content p{
+  font-size: 1rem;
+}
 
 
 
@@ -631,5 +663,18 @@ a#home {
   .footer hr{
     width: 79%;
     margin-left:3rem;
+  }
+  .review{
+    flex-direction: column;
+    width: 100%;
+  }
+  .review-container h2{
+    font-size: 2rem;
+  }
+  .review-content img{
+    width: 5rem;
+  }
+  .review-content .star img{
+    width: 5%;
   }
 }
